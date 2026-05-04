@@ -1,8 +1,6 @@
 class Solution:
     def rotateString(self, s: str, goal: str) -> bool:
-        s_conc = s + s
-
-        return len(s) == len(goal) and goal in s_conc
+        return len(s) == len(goal) and goal in (s + s)
 
 """
 - i learned that if we concatenate s to it self, then
